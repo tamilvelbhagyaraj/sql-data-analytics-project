@@ -121,7 +121,7 @@ Both reports are built as reusable `VIEW`s (`gold.report_products`, `gold.report
 
 ## 🙏 Acknowledgments
 
-This project was built while learning from **[Data with Baraa](https://www.youtube.com/@DataWithBaraa)**'s free SQL Data Warehouse & Analytics course. All scripts were written and formatted by me as a hands-on learning exercise — full credit to Baraa Khatib Salkini for the course structure and teaching approach that this project follows.
+This project was built while learning from **[Data with Baraa](https://www.youtube.com/@DataWithBaraa)**'s free SQL Zero to Hero. All scripts were written and formatted by me as a hands-on learning exercise — full credit to Baraa Khatib Salkini for the course structure and teaching approach that this project follows.
 
 ---
 
