@@ -30,17 +30,17 @@ Scripts are numbered in the order they're meant to be run, moving from broad exp
 |---|--------|---------|
 | 01 | *Database Exploration* | Initial inspection of tables, columns, and schema |
 | 02 | *Dimensions Exploration* | Understand distinct values across dimension tables |
-| **03** | `Date_Range_Exploration.sql` | Sales history duration and customer age range |
+| **03** | `Date_Range_Exploration` | Sales history duration and customer age range |
 | **04** | `Measures_Exploration__Business_KPIs_.sql` | Core KPIs: total sales, quantity, price, orders, customers |
-| **05** | `Magnitude_Analysis.sql` | Distribution of customers, products, and revenue across categories |
-| **06** | `Ranking_Analysis.sql` | Top/bottom performing products and customers |
+| **05** | `Magnitude_Analysis` | Distribution of customers, products, and revenue across categories |
+| **06** | `Ranking_Analysis` | Top/bottom performing products and customers |
 | 07 | *Change-Over-Time Analysis* | Trends in sales performance across time |
 | 08 | *Cumulative Analysis* | Running totals and moving averages |
 | 09 | *Performance Analysis* | Year-over-year / category-over-category comparisons |
 | 10 | *Data Segmentation* | Bucketing customers/products into meaningful groups |
 | 11 | *Part-to-Whole Analysis* | Category contribution to overall revenue |
-| **12** | `report_products.sql` | Consolidated **Product Report** view |
-| **13** | `report_customers.sql` | Consolidated **Customer Report** view |
+| **12** | `report_products` | Consolidated **Product Report** view |
+| **13** | `report_customers` | Consolidated **Customer Report** view |
 
 > **Note:** Scripts 01–02 and 07–11 follow the same structure and gold-layer sources as 03–06 and 12–13 — add them here as you bring the rest of your project across, adjusting names/numbers to match your actual repo.
 >
