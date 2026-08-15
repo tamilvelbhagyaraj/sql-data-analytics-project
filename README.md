@@ -28,17 +28,17 @@ Scripts are numbered in the order they're meant to be run, moving from broad exp
 
 | # | Script | Purpose |
 |---|--------|---------|
-| 01 | 'Database Exploration' | Initial inspection of tables, columns, and schema |
-| 02 | 'Dimensions Exploration' | Understand distinct values across dimension tables |
+| **01** | `Database_Exploration` | Initial inspection of tables, columns, and schema |
+| **02** | `Dimensions_Exploration` | Understand distinct values across dimension tables |
 | **03** | `Date_Range_Exploration` | Sales history duration and customer age range |
 | **04** | `Measures_Exploration__Business_KPIs` | Core KPIs: total sales, quantity, price, orders, customers |
 | **05** | `Magnitude_Analysis` | Distribution of customers, products, and revenue across categories |
 | **06** | `Ranking_Analysis` | Top/bottom performing products and customers |
-| 07 | *Change-Over-Time Analysis* | Trends in sales performance across time |
-| 08 | *Cumulative Analysis* | Running totals and moving averages |
-| 09 | *Performance Analysis* | Year-over-year / category-over-category comparisons |
-| 10 | *Data Segmentation* | Bucketing customers/products into meaningful groups |
-| 11 | *Part-to-Whole Analysis* | Category contribution to overall revenue |
+| **07** | `Change_Over_Time_Analysis` | Trends in sales performance across time |
+| **08** | `Cumulative_Analysis` | Running totals and moving averages |
+| **09** | `Performance_Analysis` | Year-over-year / category-over-category comparisons |
+| **10** | `Data_Segmentation` | Bucketing customers/products into meaningful groups |
+| **11** | `Part_to_Whole_Analysis` | Category contribution to overall revenue |
 | **12** | `report_products` | Consolidated **Product Report** view |
 | **13** | `report_customers` | Consolidated **Customer Report** view |
 
@@ -115,7 +115,7 @@ Both reports are built as reusable `VIEW`s (`gold.report_products`, `gold.report
 
 ## 🔗 Related Projects
 
-- **SQL Server Medallion Architecture Data Warehouse** — the Bronze/Silver/Gold ETL pipeline this analytics layer is built on. *(https://github.com/tamilvelbhagyaraj/sql-data-warehouse-project)*
+- **SQL Server Medallion Architecture Data Warehouse** — the Bronze/Silver/Gold ETL pipeline this analytics layer is built on. *([sql-data-warehouse-project](https://github.com/tamilvelbhagyaraj/sql-data-warehouse-project))*
 
 ---
 
