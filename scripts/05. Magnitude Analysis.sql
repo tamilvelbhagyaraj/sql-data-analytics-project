@@ -11,6 +11,8 @@ SQL Functions Used:
     - GROUP BY, ORDER BY
 ===============================================================================
 */
+USE DataWarehouse
+GO
 
 -- Find total customers by countries
 SELECT

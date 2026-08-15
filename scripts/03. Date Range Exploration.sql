@@ -25,6 +25,8 @@ SQL Functions Used:
 ==============================================================================
 */
 
+USE DataWarehouse
+GO
 -------------------------------------------------------------------------------
 -- 1. Sales Data Time Range
 --
@@ -50,17 +52,17 @@ FROM gold.fact_sales;
 -------------------------------------------------------------------------------
 
 SELECT
-    MIN(birthdate) AS oldest_birthdate,
+    MIN(birth_date) AS oldest_birth_date,
     DATEDIFF(
         YEAR,
-        MIN(birthdate),
+        MIN(birth_date),
         GETDATE()
     ) AS oldest_customer_age,
 
-    MAX(birthdate) AS youngest_birthdate,
+    MAX(birth_date) AS youngest_birth_date,
     DATEDIFF(
         YEAR,
-        MAX(birthdate),
+        MAX(birth_date),
         GETDATE()
     ) AS youngest_customer_age
 
