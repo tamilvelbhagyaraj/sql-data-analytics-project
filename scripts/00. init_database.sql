@@ -4,7 +4,7 @@ Database Initialization
 ==============================================================================
 
 Purpose:
-    Create the DataWarehouseAnalytics database, configure the required schema,
+    Create the DataWarehouse database, configure the required schema,
     create the dimension and fact tables, and load data from CSV files.
 
 Objectives:
@@ -14,7 +14,7 @@ Objectives:
     4. Load source data into the warehouse using BULK INSERT.
 
 Database Objects:
-    - Database : DataWarehouseAnalytics
+    - Database : DataWarehouse
     - Schema   : gold
     - Tables
         • dim_customers
@@ -26,7 +26,7 @@ WARNING
 ------------------------------------------------------------------------------
 Running this script will:
 
-    • Drop the existing DataWarehouseAnalytics database (if it exists)
+    • Drop the existing DataWarehouse database (if it exists)
     • Permanently delete all stored data
     • Recreate the database from scratch
 
@@ -46,21 +46,21 @@ IF EXISTS
 (
     SELECT 1
     FROM sys.databases
-    WHERE name = 'DataWarehouseAnalytics'
+    WHERE name = 'DataWarehouse'
 )
 BEGIN
-    ALTER DATABASE DataWarehouseAnalytics
+    ALTER DATABASE DataWarehouse
     SET SINGLE_USER
     WITH ROLLBACK IMMEDIATE;
 
-    DROP DATABASE DataWarehouseAnalytics;
+    DROP DATABASE DataWarehouse;
 END;
 GO
 
-CREATE DATABASE DataWarehouseAnalytics;
+CREATE DATABASE DataWarehouse;
 GO
 
-USE DataWarehouseAnalytics;
+USE DataWarehouse;
 GO
 
 -------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ CREATE TABLE gold.dim_customers
     country            NVARCHAR(50),
     marital_status     NVARCHAR(50),
     gender             NVARCHAR(50),
-    birthdate          DATE,
+    birth_date         DATE,
     create_date        DATE
 );
 GO
@@ -103,7 +103,7 @@ CREATE TABLE gold.dim_products
     category           NVARCHAR(50),
     subcategory        NVARCHAR(50),
     maintenance        NVARCHAR(50),
-    cost               INT,
+    product_cost       INT,
     product_line       NVARCHAR(50),
     start_date         DATE
 );
