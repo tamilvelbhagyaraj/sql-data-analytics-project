@@ -28,10 +28,10 @@ Scripts are numbered in the order they're meant to be run, moving from broad exp
 
 | # | Script | Purpose |
 |---|--------|---------|
-| 01 | *Database Exploration* | Initial inspection of tables, columns, and schema |
-| 02 | *Dimensions Exploration* | Understand distinct values across dimension tables |
+| 01 | 'Database Exploration' | Initial inspection of tables, columns, and schema |
+| 02 | 'Dimensions Exploration' | Understand distinct values across dimension tables |
 | **03** | `Date_Range_Exploration` | Sales history duration and customer age range |
-| **04** | `Measures_Exploration__Business_KPIs_.sql` | Core KPIs: total sales, quantity, price, orders, customers |
+| **04** | `Measures_Exploration__Business_KPIs` | Core KPIs: total sales, quantity, price, orders, customers |
 | **05** | `Magnitude_Analysis` | Distribution of customers, products, and revenue across categories |
 | **06** | `Ranking_Analysis` | Top/bottom performing products and customers |
 | 07 | *Change-Over-Time Analysis* | Trends in sales performance across time |
